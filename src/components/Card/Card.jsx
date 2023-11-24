@@ -4,9 +4,9 @@ export default function ({title,imgsrc,desc,link1}) {
     return (
         <div className="card">
             <img src={imgsrc} alt={title} />
-            <h4>{title}</h4>
+            <h2>{title}</h2>
             <p>{desc}</p>
-            <a href={link1}>Visit Website</a>
+            <a href={link1}><p className="visit">Visit Website</p></a>
         </div>
     );
 }

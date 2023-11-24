@@ -2,12 +2,8 @@
     min-height: calc(100vh - 50px) !important;
     width: 100%;
     margin-top: 50px;
-    background: rgb(82, 18, 124);
-    background: radial-gradient(
-        circle,
-        rgba(82, 18, 124, 1) 0%,
-        rgba(189, 130, 228, 1) 88%
-    );
+    background: rgb(29,48,139);
+    background: linear-gradient(90deg, rgba(29,48,139,1) 0%, rgba(130,218,228,1) 100%); 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

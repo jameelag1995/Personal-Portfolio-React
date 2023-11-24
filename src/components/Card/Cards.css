@@ -1,55 +1,84 @@
-main{
+main {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: calc(100vh - 50px) !important;
+    min-height: calc(100vh - 50px) !important;
     width: 100%;
+    background-color: #86a0a3;
 }
-main h1{
-    margin-top: 20px;
+main h1 {
+    font-size: 48px;
+    min-height: 200px;
+    color: black;
 }
-section{
+section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    height: calc(100vh - 50px) !important;
+    height: 80%;
     width: 100%;
+    gap: 16px;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    width: 300px;
-    height: 80%;
-    color: #333;
-    margin-bottom: 10px;
+    background-color: #496163;
+    max-width: 600px;
+    width: 400px;
+    min-width: 300px;
+    min-height: 600px;
+    height: 60%;
+    color: #fff;
     border-radius: 10px;
+    transition: all 0.2s ease-in-out;
 }
-.card img{
+.card:hover {
+    box-shadow: 0 0 20px;
+}
+.card img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
     height: 50%;
 }
-.card a{
-    margin: 4px;
-    padding: 4px;
+.card a {
+    width: 100%;
+    height: 40px;
     display: inline;
     text-decoration: none;
-    background-color: lightslategray;
-    border-radius: 5px;
-    color: #fff;
+    background-color: #c3d265;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.card a:hover{
-    background-color: rgb(86, 98, 110);
+.card a:hover {
+    background-color: #b4ca20;
 }
 .card p{
     padding: 0 4px;
     text-align: center;
+    font-size: 18px;
+}
+.visit {
+    padding: 0 4px;
+    text-align: center;
+    font-size: 18px;
+    color: #496163;
+
+}
+
+@media (max-width: 714px) {
+    section {
+        flex-direction: column;
+        gap: 16px;
+    }
 }

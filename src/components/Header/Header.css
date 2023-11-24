@@ -11,7 +11,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #200731;
+    background-color: #86A0A3;
 }
 .logo {
     background: url("../../assets/images/Logo.jpg") no-repeat center
@@ -32,13 +32,15 @@ menu li button {
     margin-right: 4px;
     width: 100px;
     height: 50px;
-    background-color: #200731;
+    background-color: #86A0A3;
     border: none;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
+    color: black;
+    font-weight: bold;
 }
 menu li button:hover {
-    background-color: #52127c;
+    background-color: #667a7c;
     cursor: pointer;
     border-radius: 5px;
 }
