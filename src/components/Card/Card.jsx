@@ -6,7 +6,7 @@ export default function ({title,imgsrc,desc,link1}) {
             <img src={imgsrc} alt={title} />
             <h2>{title}</h2>
             <p>{desc}</p>
-            <a href={link1}><p className="visit">Visit Website</p></a>
+            <a href={link1} target="_blank"><p className="visit">Visit Website</p></a>
         </div>
     );
 }

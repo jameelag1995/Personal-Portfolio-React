@@ -1,0 +1,33 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 100px) !important;
+    background-color: #82DAE4;
+    font-size: 1vmax;
+}
+.contact h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: 100%;
+    width: 100%;
+}
+input{
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+
+}
+textarea{
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+}

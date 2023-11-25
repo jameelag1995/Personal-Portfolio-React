@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function TabButton({children}) {
+export default function TabButton({id,children}) {
+  let target= '#' + id;
   return (
-    <li><button>{children}</button></li>
+    <li><a href={target}><button>{children}</button></a></li>
   )
 }

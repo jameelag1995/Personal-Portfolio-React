@@ -3,7 +3,7 @@ import "./Hero.css";
 import heroImg from '../../assets/images/hero-img.png'
 
 export default function Hero() {
-    return <section className="hero">
+    return <section className="hero" id="hero">
         <div className="text-container">
         <p>Hello World!</p>
         <p>I'm Jameel,</p>

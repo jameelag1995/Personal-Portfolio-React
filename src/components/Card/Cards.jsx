@@ -6,9 +6,9 @@ import flight from "../../assets/images/flightsproj.png";
 import rolldice from "../../assets/images/rolldiceproj.png";
 export default function Cards() {
     return (
-        <main>
+        <main id="projects">
             <h1>Latest Projects</h1>
-            <section>
+            <section className="cards-container">
                 <Card
                     title="MineCraft 2D"
                     imgsrc={minecraft}
