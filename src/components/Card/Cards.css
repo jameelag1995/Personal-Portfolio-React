@@ -1,9 +1,9 @@
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    min-height: calc(100vh - 100px) !important;
+    min-height: calc(100vh) !important;
     width: 100%;
     background-color: #86a0a3;
 }
@@ -23,33 +23,32 @@ main h1 {
     gap: 16px;
 }
 
-.card {
+#card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #496163;
     max-width: 600px;
-    width: 300px;
+    width: 400px;
     min-width: 200px;
-    height: 400px;
-    
+    height: 600px;
     color: #fff;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
     
 }
-.card:hover {
+#card:hover {
     box-shadow: 0 0 20px;
     
 }
-.card img {
+#card img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
     height: 50%;
 }
-.card a {
+#card a {
     width: 100%;
     height: 40px;
     display: inline;
@@ -62,10 +61,10 @@ main h1 {
     justify-content: center;
     align-items: center;
 }
-.card a:hover {
+#card a:hover {
     background-color: #b4ca20;
 }
-.card p{
+#card p{
     padding: 0 4px;
     text-align: center;
     font-size: 18px;
@@ -79,7 +78,7 @@ main h1 {
 }
 
 @media (max-width: 800px) {
-    section {
+    .cards-container {
         flex-direction: column;
         gap: 16px;
     }

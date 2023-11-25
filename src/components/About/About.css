@@ -4,7 +4,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    min-height: calc(100vh - 100px) !important;
+    min-height: calc(100vh) !important;
     background-color: #8E867F;
     font-size: 1vmax;
     

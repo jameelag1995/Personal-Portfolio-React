@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ({title,imgsrc,desc,link1}) {
     return (
-        <div className="card">
+        <div id="card" class="animate__animated animate__zoomInDown">
             <img src={imgsrc} alt={title} />
             <h2>{title}</h2>
             <p>{desc}</p>

@@ -4,7 +4,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    min-height: calc(100vh - 100px) !important;
+    min-height: calc(100vh) !important;
     background-color: #496163;
     font-size: 1vmax;
 }
@@ -15,4 +15,11 @@
 }
 .icon:hover{
     box-shadow: 0 0 5px;
+}
+
+@media (max-width: 800px) {
+    .social {
+        flex-direction: column;
+        gap: 16px;
+    }
 }

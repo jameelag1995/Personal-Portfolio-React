@@ -1,14 +1,20 @@
 .contact{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 1.2rem;
     width: 100%;
-    min-height: calc(100vh - 100px) !important;
+    min-height: calc(100vh) !important;
     background-color: #82DAE4;
     font-size: 1vmax;
+    color: black;
 }
-.contact h1{
+.contact p{
+    font-size: 32px;
+    width: 30%;
+}
+form h1{
     text-align: center;
 }
 form{
@@ -18,16 +24,25 @@ form{
     align-items: center;
     gap: 32px;
     height: 100%;
-    width: 100%;
+    width: 50%;
+    min-width: 400px;
 }
 input{
     width: 400px;
     height: 50px;
     border-radius: 5px;
+    background-color: #496163;
 
 }
 textarea{
     border-radius: 5px;
-    width: 400px;
+    width: 600px;
     height: 300px;
+    background-color: #496163;
+}
+
+@media (max-width: 800px) {
+    .contact{
+        flex-direction: column;
+    }
 }

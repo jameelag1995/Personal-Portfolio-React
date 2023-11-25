@@ -12,6 +12,7 @@ nav {
     top: 0;
     width: 100%;
     background-color: #86A0A3;
+    z-index: 99;
 }
 .logo {
     background: url("../../assets/images/Logo3.png") no-repeat center
