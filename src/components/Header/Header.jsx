@@ -3,7 +3,7 @@ import "./Header.css";
 import TabButton from "./TabButton";
 export default function Header() {
     function reloadPage(){
-        window.location.reload();
+        window.location.href = 'index.html';
     }
     return <nav className="header-container">
         <div className="logo" onClick={reloadPage}></div>
