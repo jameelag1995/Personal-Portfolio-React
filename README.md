@@ -8,6 +8,7 @@ Welcome to my personal portfolio website built with React! This portfolio showca
 
 1. [Overview](#overview)
 2. [Components](#components)
+3. [Preview](#preview)
 
 ## Overview
 
