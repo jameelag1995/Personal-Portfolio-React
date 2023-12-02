@@ -1,4 +1,4 @@
-main {
+.projects-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -6,21 +6,20 @@ main {
     min-height: calc(100vh) !important;
     width: 100%;
     background-color: #86a0a3;
+    padding: 1.3rem;
 }
-main h1 {
-    font-size: 48px;
-    min-height: 100px;
-    color: black;
-}
+
 .cards-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 80%;
+    min-height: 800px;
     width: 100%;
     gap: 16px;
+    transition: all 0.2s ease-in-out;
+    
 }
 
 #card {
@@ -32,15 +31,14 @@ main h1 {
     max-width: 600px;
     width: 400px;
     min-width: 200px;
-    height: 600px;
+    height: 800px;
     color: #fff;
     border-radius: 10px;
-    transition: all 0.2s ease-in-out;
-    
+    transition: all 0.5s ease-in;
+    position: relative;
 }
 #card:hover {
-    box-shadow: 0 0 20px;
-    
+    width: 600px;
 }
 #card img {
     border-top-left-radius: 10px;
@@ -48,38 +46,59 @@ main h1 {
     width: 100%;
     height: 50%;
 }
+#card #project-title {
+    color: #fff;
+    font-size: 2.3rem;
+}
 #card a {
-    width: 100%;
-    height: 40px;
+    width: 50%;
+    height: 50px;
     display: inline;
     text-decoration: none;
-    background-color: #c3d265;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.2s ease-in;
 }
 #card a:hover {
-    background-color: #b4ca20;
+    box-shadow: #fff 0 5px 2px;
 }
-#card p{
+#card p {
     padding: 0 4px;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 .visit {
     padding: 0 4px;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.8rem;
+    
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    
+    
+}
+.website-link{
+    border-bottom-left-radius: 5px;
+    background-color: #c3d265;
     color: #496163;
-
+}
+.github-link{
+    border-bottom-right-radius: 5px;
+    background-color: #010409;
+    color: #fff;
 }
 
 @media (max-width: 800px) {
     .cards-container {
         flex-direction: column;
-        gap: 16px;
+        gap: 1.6rem;
     }
+    
 }

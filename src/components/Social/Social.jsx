@@ -7,18 +7,24 @@ import { TiSocialTwitter } from "react-icons/ti";
 export default function Social() {
     return (
         <section className="social" id="social">
-            <a href="https://github.com/jameelag1995/" target="_blank">
-                <SiGithub className="icon" />
-            </a>
-            <a
-                href="https://www.linkedin.com/in/jameel-agbaria-0a8593159/"
-                target="_blank"
-            >
-                <GrLinkedin className="icon" />
-            </a>
-            <a href="https://twitter.com/agbariajameel95" target="_blank">
-                <TiSocialTwitter className="icon" />
-            </a>
+            <h1 id="title">Social</h1>
+            <div className="icons-container">
+                <a href="https://github.com/jameelag1995/" target="_blank">
+                    <SiGithub className="icon" />
+                    <h3>GitHub</h3>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/jameel-agbaria-0a8593159/"
+                    target="_blank"
+                >
+                    <GrLinkedin className="icon" />
+                    <h3>LinkedIn</h3>
+                </a>
+                <a href="https://twitter.com/agbariajameel95" target="_blank">
+                    <TiSocialTwitter className="icon" />
+                    <h3>Twitter</h3>
+                </a>
+            </div>
         </section>
     );
 }

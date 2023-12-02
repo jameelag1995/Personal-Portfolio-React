@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,10 +8,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
-    background-color: #86A0A3;
+    background-color: #86a0a3;
     z-index: 99;
 }
 .logo {
@@ -33,24 +33,27 @@ menu li button {
     margin-right: 4px;
     width: 150px;
     height: 100px;
-    background-color: #86A0A3;
+    background-color: #86a0a3;
     border: none;
     border-radius: 5px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 menu li button:hover {
     background-color: #667a7c;
     cursor: pointer;
     border-radius: 5px;
+    width: 200px;
+    text-decoration: underline;
 }
-@media (max-width: 800px) {
-    nav {
-        flex-direction: column;
-    }
-    menu{
+menu li button:active {
+    background-color: #667a7c;
+}
+
+@media (max-width: 900px) {
+    menu {
         display: none;
     }
 }

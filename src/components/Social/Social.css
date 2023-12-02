@@ -1,24 +1,52 @@
 .social{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     min-height: calc(100vh) !important;
     background-color: #496163;
-    font-size: 1vmax;
+    font-size: 4.8rem;
+    padding: 1.3rem;
+}
+
+.icons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80%;
 }
 .icon{
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     color: #E3AB81;
+    transition: all 0.5s ease-in;
 }
 .icon:hover{
-    box-shadow: 0 0 5px;
+    filter: drop-shadow(0 0 0.3rem #fff);
+    /* box-shadow: 0 0 5px; */
+    width: 400px;
+    height: 400px;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    width: 400px;
+    height: 400px;
+
+}
+a h3{
+    color: #fff;
+}
+a h3:hover{
+    color: #E3AB81;
 }
 
 @media (max-width: 800px) {
-    .social {
+    .icons-container {
         flex-direction: column;
         gap: 16px;
     }

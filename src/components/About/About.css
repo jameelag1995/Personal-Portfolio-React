@@ -1,14 +1,23 @@
+.about-container{
+    min-height: calc(100vh) !important;
+    width: 100%;
+    background-color: #8E867F;
+    font-size: 2rem;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 .about {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    min-height: calc(100vh) !important;
-    background-color: #8E867F;
-    font-size: 1vmax;
-    
+    height: 80%;
 }
+
 
 
 .about-me{
@@ -18,7 +27,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 
@@ -26,6 +34,7 @@
     width: 300px;
     height: 300px;
     border: 2px solid #fff;
+    margin-bottom: 10px;
 }
 
 .skills-container{
@@ -34,10 +43,10 @@
 
 .container{
     width: 100%;
+    min-width: 400px;
     background: #fff;
-    margin: 0 15px;
     padding: 10px 20px;
-    border-radius: 7px;
+    border-radius: 6px;
 }
 
 .title-text {
@@ -57,7 +66,7 @@
 
 .skill-box .title{
     display: block;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 600;
     color: #333;
 }
@@ -80,28 +89,34 @@
     animation: progress 1s ease-in-out forwards;
     opacity: 0;
 }
-
-
-.skill-per.css {
-    width: 90%;
+.skill-per.mongodb{
+    animation-delay: 0.1s;
+}
+.skill-per.html{
+    width: 99%;
     animation-delay: 0.1s;
 }
 
-.skill-per.javascript{
-    width: 95%;
+.skill-per.css {
+    width: 90%;
     animation-delay: 0.2s;
+}
+
+.skill-per.javascript{
+    width: 96%;
+    animation-delay: 0.3s;
 }
 .skill-per.nodejs{
     width: 70%;
-    animation-delay: 0.3s;
+    animation-delay: 0.4s;
 }
 .skill-per.reactjs{
-    width: 30%;
-    animation-delay: 0.3s;
+    width: 50%;
+    animation-delay: 0.5s;
 }
 .skill-per.github{
-    width: 100%;
-    animation-delay: 0.3s;
+    width: 98%;
+    animation-delay: 0.6s;
 }
 
 
@@ -120,7 +135,7 @@
     position: absolute;
     right: -14px;
     top: -28px;
-    font-size: 9px;
+    font-size: 1rem;
     font-weight: 500;
     color: #fff;
     padding: 2px 6px;
@@ -141,16 +156,21 @@
     transform: translateX(-50%) rotate(45deg);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .about{
         flex-direction: column;
     }
     .profile-pic{
-        width: 150px;
-        height: 150px;
+        
+        width: 300px;
+        height: 300px;
 
     }
     .about-me{
+        width: 100%;
+    }
+    .skills-container{
+        padding: 1rem;
         width: 100%;
     }
    

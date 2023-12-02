@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Social from "./components/Social/Social";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import 'animate.css';
+import "animate.css";
 function App() {
     return (
         <>
