@@ -1,5 +1,6 @@
 .projects-container {
     display: flex;
+
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -12,14 +13,13 @@
 .cards-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     min-height: 800px;
     width: 100%;
     gap: 16px;
     transition: all 0.2s ease-in-out;
-    
 }
 
 #card {
@@ -34,17 +34,17 @@
     height: 800px;
     color: #fff;
     border-radius: 10px;
-    transition: all 0.5s ease-in;
+    transition: all 0.4s ease-in;
     position: relative;
 }
 #card:hover {
-    width: 600px;
+    width: 500px;
 }
 #card img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     width: 100%;
     height: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 #card #project-title {
     color: #fff;
@@ -72,24 +72,21 @@
     padding: 0 4px;
     text-align: center;
     font-size: 1.8rem;
-    
 }
-.links{
+.links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 50px;
-    
-    
 }
-.website-link{
+.website-link {
     border-bottom-left-radius: 5px;
     background-color: #c3d265;
     color: #496163;
 }
-.github-link{
+.github-link {
     border-bottom-right-radius: 5px;
     background-color: #010409;
     color: #fff;
@@ -100,5 +97,4 @@
         flex-direction: column;
         gap: 1.6rem;
     }
-    
 }

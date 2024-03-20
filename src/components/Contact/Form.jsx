@@ -8,14 +8,14 @@ export default function Form() {
         email: "",
         message: "",
     });
-    const usrname = useRef();
+    const username = useRef();
     const email = useRef();
     const message = useRef();
 
     function handleSubmit(e) {
         e.preventDefault();
         if (
-            !usrname.current.value ||
+            !username.current.value ||
             !email.current.value ||
             !message.current.value
         ) {
@@ -26,7 +26,7 @@ export default function Form() {
             setShowErrMsg(false);
             setContactForm({
                 ...contactForm,
-                [usrname.current.name]: usrname.current.value,
+                [username.current.name]: username.current.value,
                 [email.current.name]: email.current.value,
                 [message.current.name]: message.current.value,
             });
@@ -37,13 +37,13 @@ export default function Form() {
     }
 
     return (
-        <form id="usrform" onSubmit={handleSubmit}>
-            <input ref={usrname} type="text" name="name" placeholder="Name" />
+        <form id="userForm" onSubmit={handleSubmit}>
+            <input ref={username} type="text" name="name" placeholder="Name" />
             <input ref={email} type="email" name="email" placeholder="Email" />
             <textarea
                 ref={message}
                 name="message"
-                form="usrform"
+                form="userForm"
                 placeholder="Enter your text here..."
             />
 
