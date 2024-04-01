@@ -1,0 +1,24 @@
+.Carousel {
+    /* background: black; */
+    margin: 0;
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    width: 90%;
+}
+
+/* @keyframes moveBg {
+    from {
+        background-position: 0 50%;
+    }
+    to {
+        background-position: -1134px 50%;
+    }
+} */
+
+.icon {
+    padding: 10px 0 110px 0;
+}
