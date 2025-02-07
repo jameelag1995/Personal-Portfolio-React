@@ -1,19 +1,25 @@
 .about-container{
-    min-height: calc(100vh) !important;
+    min-height: calc(100vh + 100px) !important;
     width: 100%;
-    background-color: #8E867F;
+    background: rgb(29, 48, 139);
+    background: linear-gradient(
+        90deg,
+        rgba(29, 48, 139, 1) 0%,
+        rgba(130, 218, 228, 1) 100%
+    );
     font-size: 2rem;
     padding: 1.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 16px;
 }
 .about {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: 80%;
 }
@@ -22,7 +28,7 @@
 
 .about-me{
     width: 40%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,14 +37,15 @@
 
 
 .profile-pic{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;;
     border: 2px solid #fff;
     margin-bottom: 10px;
 }
 
 .skills-container{
     width: 40%;
+    height: 80%;
 }
 
 .container{
@@ -47,6 +54,10 @@
     background: #fff;
     padding: 10px 20px;
     border-radius: 6px;
+    overflow-y: auto;
+    max-height: 600px;
+    scrollbar-width: thin;
+    scrollbar-color: #E3AB81 #fff;
 }
 
 .title-text {
@@ -162,8 +173,8 @@
     }
     .profile-pic{
         
-        width: 300px;
-        height: 300px;
+        width: 250px;;
+        height: 250px;;
 
     }
     .about-me{
@@ -173,5 +184,4 @@
         padding: 1rem;
         width: 100%;
     }
-   
 }

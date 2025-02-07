@@ -15,23 +15,10 @@ export default function About() {
                     />
                     
                     <p>
-                        I'm Jameel Agbaria From Umm El Fahem, living currently
-                        in Haifa with my wife Huda. I am a graduate of the
-                        Hebrew University of Jerusalem, holding a B.SC in
-                        Mathematics & Computer Science. I am passionate about
-                        the fields of web development, machine learning and
-                        artificial intelligence, and I am excited about the
-                        potential these technologies have to transform the world
-                        we live in. My interest in these areas led me to explore
-                        various programming languages and data analysis tools,
-                        and I am confident in my ability to leverage these
-                        skills to develop innovative solutions that can improve
-                        people's lives. As a self motivated and analytical
-                        individual, I am always eager to learn new things and
-                        take on new challenges. I believe that my education and
-                        skills would make me a valuable addition to any team,
-                        and I look forward to the opportunity to contribute to
-                        your organization's success.
+                    Mathematics & Computer Science graduate with a passion for software development and building scalable web solutions. 
+                    Experienced in modern front-end and back-end technologies with a track record of implementing real-time systems and AI-driven workflows.
+                    Freelancing at a startup honed my technical expertise and problem-solving skills, while my leadership role at Makes Software strengthened my ability to drive team innovation and deliver impactful results. 
+                    Eager to contribute to dynamic teams, tackle complex challenges, and grow in the tech industry.
                     </p>
                 </div>
                 <div className="skills-container">

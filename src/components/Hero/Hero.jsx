@@ -10,11 +10,11 @@ export default function Hero() {
                 <div className="text-container">
                     <TypeAnimation
                         sequence={[
-                            `Hello World!\nI'm Jameel.\nA Full Stack\n Web Developer.`,
-                            1000,
+                            `Hello World!\nI'm Jameel. A Software Engineer. \n Mathematics & Computer Science graduate leveraging modern full-stack expertise to build scalable solutions and AI-driven systems. Proven track record in technical leadership and innovation through startup experience, passionate about tackling complex challenges and driving impactful results.`,
+                            3000,
                             "",
                         ]}
-                        speed={50}
+                        speed={60}
                         style={{
                             whiteSpace: "pre-line",
                             fontSize: "6em",
@@ -32,13 +32,13 @@ export default function Hero() {
                     A FullStack Web Developer();
                 </p> */}
                 </div>
-                <div className="img-container">
+                {/* <div className="img-container">
                     <img
                         src={heroImg}
                         alt="Code"
                         className="animate__animated animate__backInRight"
                     />
-                </div>
+                </div> */}
             </section>
             {/* <MyCarousel /> */}
         </>

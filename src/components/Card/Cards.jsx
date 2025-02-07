@@ -54,6 +54,7 @@ export default function Cards() {
                     link1="https://vermillion-paletas-4d1620.netlify.app/"
                     link2="https://github.com/jameelag1995/DiceRoll"
                 />
+                
             </section>
         </main>
     );
