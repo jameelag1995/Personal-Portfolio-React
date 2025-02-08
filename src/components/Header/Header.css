@@ -62,4 +62,7 @@ menu li button:active {
     menu {
         display: none;
     }
+    .logo {
+        width: 200px;
+    }
 }

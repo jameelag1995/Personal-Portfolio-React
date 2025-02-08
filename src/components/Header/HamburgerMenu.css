@@ -1,9 +1,9 @@
 /* mobile menu */
 .menu-wrap {
     position: fixed;
-    top: 2rem;
+    top: 16px;
     right: 0;
-    z-index: 99;
+    z-index: 100;
     display: none;
     width: 100px;
     height: 100px;
@@ -28,7 +28,7 @@
     width: 60px;
     height: 60px;
     padding: 1rem;
-    background: #86a0a3;
+    background: #070707;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,11 +86,11 @@
     visibility: visible;
 }
 .menu-wrap .toggler:checked ~ .hamburger {
-    background-color: #333;
+    background-color: #070707;
 }
 
 .menu-wrap .toggler:checked ~ .menu > div {
-    transform: translateX(0);
+    transform: scale(1);
     transition-duration: 0.2s;
 }
 
@@ -101,10 +101,9 @@
 
 .menu-wrap .menu {
     position: fixed;
-    top: 0;
     right: 0;
-    width: 40%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     visibility: hidden;
     overflow: hidden;
     display: flex;
@@ -113,14 +112,14 @@
 }
 
 .menu-wrap .menu > div {
-    background: #333;
+    background: rgba(0, 0, 0, 0.85);
     width: 100vw;
-    height: 200vw;
+    height: 100vh;
     display: flex;
     flex: none;
     align-items: center;
     justify-content: center;
-    transform: translateX(100vw);
+    transform: scale(0);
     transition: all 0.4s ease;
 }
 

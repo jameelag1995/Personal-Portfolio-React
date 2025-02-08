@@ -15,11 +15,7 @@ export default function Hero() {
                             "",
                         ]}
                         speed={60}
-                        style={{
-                            whiteSpace: "pre-line",
-                            fontSize: "6em",
-                            textAlign: "center",
-                        }}
+                        className="type-animation"
                         repeat={Infinity}
                     />
                     {/* <p className="animate__animated animate__backInDown">

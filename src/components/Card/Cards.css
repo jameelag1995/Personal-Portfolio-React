@@ -39,8 +39,9 @@
     justify-content: space-between;
     align-items: center;
     background-color: #496163;
-    min-width: 200px;
-    width: 500px;
+    min-width: 300px;
+    /* width: 500px; */
+    max-width: 500px;
     flex: 0 0 auto;
     height: 600px;
     color: #fff;

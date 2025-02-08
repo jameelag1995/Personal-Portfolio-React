@@ -50,7 +50,7 @@
 
 .container{
     width: 100%;
-    min-width: 400px;
+    /* min-width: 400px; */
     background: #fff;
     padding: 10px 20px;
     border-radius: 6px;
