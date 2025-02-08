@@ -41,11 +41,11 @@ export default function Form() {
                 name="message"
                 placeholder="Enter your text here..."
             />
-            <button type="submit">Submit Form</button>
-            {showErrMsg ? <p className="err-msg">Must Fill All Fields!</p> : ""}
+            <button type="submit">Send</button>
+            {showErrMsg ? <p className="err-msg">Must fill all fields!</p> : ""}
             {formSubmitted ? (
                 <p className="success-submission">
-                    Form Submitted Successfully!
+                    Form was sent Successfully!
                 </p>
             ) : (
                 ""
