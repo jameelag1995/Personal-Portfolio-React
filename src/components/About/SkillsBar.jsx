@@ -5,6 +5,8 @@ export default function SkillsBar() {
     return (
         <div className="container">
             <h1 className="title-text">Skills Progress Bar</h1>
+        <div className="skillz">
+
             <Skill skillName="HTML" skillPercentage={100} />
             <Skill skillName="CSS" skillPercentage={100} />
             <Skill skillName="JavaScript" skillPercentage={100} />
@@ -31,6 +33,7 @@ export default function SkillsBar() {
             <Skill skillName="Figma" skillPercentage={80} />
             <Skill skillName="Jira" skillPercentage={75} />
             <Skill skillName="Monday" skillPercentage={75} />
+        </div>
         </div>
     );
 }
