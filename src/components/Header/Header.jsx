@@ -10,11 +10,12 @@ export default function Header() {
         <nav className="header-container">
             <div className="logo" onClick={reloadPage}></div>
             <menu>
-                <TabButton id="hero">Hero</TabButton>
-                <TabButton id="projects">Projects</TabButton>
-                <TabButton id="about">About</TabButton>
-                <TabButton id="social">Social Media</TabButton>
-                <TabButton id="contact">Contact Me</TabButton>
+                <TabButton target="#hero">Hero</TabButton>
+                <TabButton target="#projects">Projects</TabButton>
+                <TabButton target="#about">About</TabButton>
+                <TabButton target="#social">Social Media</TabButton>
+                <TabButton target="#contact">Contact Me</TabButton>
+                <TabButton target="https://docs.google.com/document/d/13v9c4mmQ_ICvU8DKz9TAiTr9K60C8ui7/edit?usp=sharing&ouid=101416131232533157937&rtpof=true&sd=true" >Resume</TabButton>
             </menu>
             <HamburgerMenu />
         </nav>
