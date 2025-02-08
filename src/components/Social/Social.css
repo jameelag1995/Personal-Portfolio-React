@@ -27,11 +27,11 @@
 .icon {
     width: 250px;
     height: 250px;
-    color: #e3ab81;
+    color: #000000;
     transition: all 0.3s ease-in;
 }
 .icon:hover {
-    filter: drop-shadow(0 0 0.3rem #333);
+    /* filter: drop-shadow(0 0 0.3rem #333); */
     /* box-shadow: 0 0 5px; */
     transform: scale(1.1);
 }

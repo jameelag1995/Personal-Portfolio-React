@@ -18,9 +18,9 @@ export default function Social() {
                 >
                     <GrLinkedin className="icon" />
                 </a>
-                <a href="https://twitter.com/agbariajameel95" target="_blank">
+                {/* <a href="https://twitter.com/agbariajameel95" target="_blank">
                     <TiSocialTwitter className="icon" />
-                </a>
+                </a> */}
             </div>
         </section>
     );

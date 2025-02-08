@@ -54,16 +54,31 @@ input {
     width: 400px;
     height: 50px;
     border-radius: 5px;
-    background-color: #496163;
+    /* background-color: #496163; */
     padding-left: 2rem;
 }
 textarea {
     border-radius: 5px;
     width: 600px;
     height: 400px;
-    background-color: #496163;
+    /* background-color: #496163; */
     padding: 2rem;
     field-sizing: content;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #333;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    opacity: 1;
 }
 .err-msg {
     font-size: 1.6rem;

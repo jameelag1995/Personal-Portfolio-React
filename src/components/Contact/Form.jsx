@@ -47,7 +47,7 @@ export default function Form() {
                 placeholder="Enter your text here..."
             />
 
-            <input type="submit" value="Submit Form" />
+            <button type="submit" >Submit Form</button>
             {showErrMsg ? <p className="err-msg">Must Fill All Fields!</p> : ""}
             {formSubmitted ? (
                 <p className="success-submission">
