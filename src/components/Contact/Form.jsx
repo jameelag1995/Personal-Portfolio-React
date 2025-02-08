@@ -1,53 +1,47 @@
 import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 
 export default function Form() {
     const [showErrMsg, setShowErrMsg] = useState(false);
     const [formSubmitted, setFormSubmitted] = useState(false);
-    const [contactForm, setContactForm] = useState({
-        name: "",
-        email: "",
-        message: "",
-    });
-    const username = useRef();
-    const email = useRef();
-    const message = useRef();
+    const form = useRef();
 
-    function handleSubmit(e) {
+    const sendEmail = (e) => {
         e.preventDefault();
-        if (
-            !username.current.value ||
-            !email.current.value ||
-            !message.current.value
-        ) {
+
+        if (!form.current.name.value || !form.current.email.value || !form.current.message.value) {
             setFormSubmitted(false);
             setShowErrMsg(true);
             return;
-        } else {
-            setShowErrMsg(false);
-            setContactForm({
-                ...contactForm,
-                [username.current.name]: username.current.value,
-                [email.current.name]: email.current.value,
-                [message.current.name]: message.current.value,
-            });
-            setFormSubmitted(true);
         }
 
-        // Do somthing with Contact form details
-    }
+        emailjs.sendForm(
+            // get service id and template id from .env file
+            import.meta.env.VITE_EMAILJS_SERVICE_ID, // Replace with your Service ID
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID , // Replace with your Template ID
+            form.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY // Replace with your Public Key
+        )
+        .then((result) => {
+            console.log('SUCCESS!', result.text);
+            setShowErrMsg(false);
+            setFormSubmitted(true);
+            form.current.reset();
+        }, (error) => {
+            console.log('FAILED...', error.text);
+            setShowErrMsg(true);
+        });
+    };
 
     return (
-        <form id="userForm" onSubmit={handleSubmit}>
-            <input ref={username} type="text" name="name" placeholder="Name" />
-            <input ref={email} type="email" name="email" placeholder="Email" />
+        <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
             <textarea
-                ref={message}
                 name="message"
-                form="userForm"
                 placeholder="Enter your text here..."
             />
-
-            <button type="submit" >Submit Form</button>
+            <button type="submit">Submit Form</button>
             {showErrMsg ? <p className="err-msg">Must Fill All Fields!</p> : ""}
             {formSubmitted ? (
                 <p className="success-submission">
