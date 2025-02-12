@@ -10,7 +10,7 @@ export default function Hero() {
                 <div className="text-container">
                     <TypeAnimation
                         sequence={[
-                            `Hello World!\nI'm Jameel. A Software Engineer. \n Mathematics & Computer Science graduate leveraging modern full-stack expertise to build scalable solutions and AI-driven systems. Proven track record in technical leadership and innovation through startup experience, passionate about tackling complex challenges and driving impactful results.`,
+                            `Hello World!\nI'm Jameel.\n I am Software Engineer.`,
                             3000,
                             "",
                         ]}
