@@ -10,22 +10,28 @@ import BarterNest from "../../assets/images/BarterNest.png";
 
 export default function Cards() {
     const cardsContainerRef = useRef(null);
-    const scrollIntervalRef = useRef(null); // Add this line to store interval reference
+    const scrollIntervalRef = useRef(null);
+    const scrollDirectionRef = useRef(1); // 1 for right, -1 for left
 
     useEffect(() => {
         const container = cardsContainerRef.current;
         if (!container) return;
 
-        const scrollRight = () => {
-            if (container.scrollLeft >= (container.scrollWidth - container.offsetWidth)) {
-                container.scrollLeft = 0;
-            } else {
-                container.scrollLeft += 1;
+        const scroll = () => {
+            const isAtEnd = container.scrollLeft >= (container.scrollWidth - container.offsetWidth);
+            const isAtStart = container.scrollLeft <= 0;
+
+            if (isAtEnd) {
+                scrollDirectionRef.current = -1; // Change direction to left
+            } else if (isAtStart) {
+                scrollDirectionRef.current = 1; // Change direction to right
             }
+
+            container.scrollLeft += scrollDirectionRef.current;
         };
 
         const startScrolling = () => {
-            scrollIntervalRef.current = setInterval(scrollRight, 30);
+            scrollIntervalRef.current = setInterval(scroll, 30);
         };
 
         const stopScrolling = () => {
