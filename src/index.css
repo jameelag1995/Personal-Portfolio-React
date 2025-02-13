@@ -15,8 +15,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    /* Modern scrollbar styling */
+    --scrollbar-width: 8px;
+    --scrollbar-track: rgba(255, 255, 255, 0.1);
+    --scrollbar-thumb: rgba(255, 255, 255, 0.5);
+    
+    /* For Firefox */
     scrollbar-width: thin;
-    scrollbar-color: #496163 #fff;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* For Webkit browsers (Chrome, Safari, etc) */
+::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7);
 }
 
 body {

@@ -26,8 +26,12 @@
     gap: 16px;
     padding: 8px;
     scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: #496163 #fff;
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
 }
 
 #card {
@@ -46,6 +50,7 @@
     border-radius: 10px;
     transition: all 0.4s ease-in;
     position: relative;
+    scroll-snap-align: start;
 }
 
 #card img {
@@ -114,7 +119,9 @@
 
 @media (max-width: 800px) {
     .cards-container {
-        flex-direction: column;
+        flex-direction: row; /* Keep horizontal scroll on mobile */
+        overflow-x: scroll;
+        overflow-y: hidden;
         gap: 1.6rem;
     }
 }
