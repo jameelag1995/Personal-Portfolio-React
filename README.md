@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website built with React! This portfolio showcases my skills, projects, and provides an insight into my journey as a web developer.
 
-## link- https://idyllic-tarsier-5a5ba6.netlify.app/
+## link- https://jeemlabs.netlify.app/
 
 ## Table of Contents
 

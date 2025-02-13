@@ -8,7 +8,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: sticky;
     top: 0;
     width: 100%;
@@ -31,7 +31,7 @@ menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style: none;
 }
 menu li button {
