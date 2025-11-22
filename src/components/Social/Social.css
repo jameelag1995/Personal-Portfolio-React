@@ -54,4 +54,42 @@ a h3:hover {
         flex-direction: column;
         gap: 16px;
     }
+    .icon {
+        width: 180px;
+        height: 180px;
+    }
+    a {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .social {
+        padding: 1rem;
+    }
+    .icons-container {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+    .icon {
+        width: 140px;
+        height: 140px;
+    }
+    a {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        width: 100px;
+        height: 100px;
+    }
+    a {
+        width: 100px;
+        height: 100px;
+    }
 }

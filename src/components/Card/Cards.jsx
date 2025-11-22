@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./Cards.css";
 import Card from "./Card";
 import minecraft from "../../assets/images/minecraftproj.png";
@@ -104,9 +104,19 @@ export default function Cards() {
         <main id="projects" className="projects-container">
             <h1 id="title">Latest Projects</h1>
             <section className="cards-container" ref={cardsContainerRef}>
-                {[...cardElements, ...cardElements].map((card, index) => (
+                {cardElements.map((card, index) => (
                     <Card
-                        key={index}
+                        key={`${card.title}-${index}`}
+                        title={card.title}
+                        imgsrc={card.imgsrc}
+                        desc={card.desc}
+                        link1={card.link1}
+                        link2={card.link2}
+                    />
+                ))}
+                {cardElements.map((card, index) => (
+                    <Card
+                        key={`${card.title}-duplicate-${index}`}
                         title={card.title}
                         imgsrc={card.imgsrc}
                         desc={card.desc}

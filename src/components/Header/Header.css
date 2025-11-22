@@ -15,6 +15,7 @@ nav {
     background-color: #070707;
     opacity: 0.7;
     z-index: 99;
+    height: 100px;
 }
 .logo {
     background: url("../../assets/images/JEEMLABS1.png") no-repeat center center;
@@ -26,6 +27,7 @@ nav {
     image-rendering: crisp-edges;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    flex-shrink: 0;
 }
 menu {
     display: flex;
@@ -33,6 +35,7 @@ menu {
     align-items: center;
     flex-wrap: nowrap;
     list-style: none;
+    gap: 4px;
 }
 menu li button {
     padding: 0 4px;
@@ -46,13 +49,13 @@ menu li button {
     color: #fff;
     font-weight: bold;
     font-size: 1.8rem;
+    white-space: nowrap;
 }
 menu li button:hover {
     background-color: #667a7c;
     cursor: pointer;
     border-radius: 5px;
     width: 200px;
-    /* text-decoration: underline; */
 }
 menu li button:active {
     background-color: #667a7c;
@@ -62,7 +65,23 @@ menu li button:active {
     menu {
         display: none;
     }
+    nav {
+        height: auto;
+        padding: 0.5rem;
+    }
     .logo {
         width: 200px;
+        height: auto;
+        min-height: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 0.25rem;
+    }
+    .logo {
+        width: 150px;
+        min-height: 50px;
     }
 }

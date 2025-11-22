@@ -1,16 +1,16 @@
-import React from "react";
 import "./Header.css";
 import TabButton from "./TabButton";
 import HamburgerMenu from "./HamburgerMenu";
 export default function Header() {
     function reloadPage() {
-        window.location.href = "index.html";
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     return (
         <nav className="header-container">
             <div className="logo" onClick={reloadPage}></div>
             <menu>
                 <TabButton target="#hero">Hero</TabButton>
+                <TabButton target="#experience">Experience</TabButton>
                 <TabButton target="#projects">Projects</TabButton>
                 <TabButton target="#about">About</TabButton>
                 <TabButton target="#social">Social Media</TabButton>

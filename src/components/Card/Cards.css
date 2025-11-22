@@ -117,11 +117,54 @@
     color: #fff;
 }
 
-@media (max-width: 800px) {
-    .cards-container {
-        flex-direction: row; /* Keep horizontal scroll on mobile */
-        overflow-x: scroll;
-        overflow-y: hidden;
-        gap: 1.6rem;
+@media (max-width: 768px) {
+    #card {
+        min-width: 280px;
+        height: 550px;
+    }
+    #card #project-title {
+        font-size: 1.8rem;
+    }
+    #card p {
+        font-size: 1.5rem;
+    }
+    .visit {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-container {
+        padding: 1rem;
+    }
+    #card {
+        min-width: 250px;
+        height: 500px;
+        padding: 8px;
+    }
+    #card #project-title {
+        font-size: 1.6rem;
+    }
+    #card p {
+        font-size: 1.4rem;
+    }
+    #card a {
+        height: 40px;
+    }
+    .links {
+        height: 40px;
+    }
+    .visit {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #card {
+        min-width: 220px;
+        height: 450px;
+    }
+    #card img {
+        height: 45%;
     }
 }

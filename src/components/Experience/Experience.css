@@ -1,0 +1,338 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh + 100px) !important;
+    background: rgb(29, 48, 139);
+    background: linear-gradient(
+        90deg,
+        rgba(29, 48, 139, 1) 0%,
+        rgba(130, 218, 228, 1) 100%
+    );
+    padding: 1.3rem;
+    gap: 16px;
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 24px;
+    padding: 0 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    align-items: flex-start;
+}
+
+.experience-content::-webkit-scrollbar {
+    display: none;
+}
+
+.experience-card {
+    background-color: #496163;
+    border-radius: 10px;
+    padding: 24px;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    border-left: 5px solid #82dae4;
+    animation: slideInLeft 0.6s ease-out;
+    flex: 0 0 auto;
+    min-width: 450px;
+    max-width: 500px;
+    height: auto;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Tablet: Show 1.5-2 cards */
+@media (max-width: 1200px) {
+    .experience-card {
+        min-width: 400px;
+        max-width: 450px;
+    }
+}
+
+/* Small desktop: Show 2 cards */
+@media (max-width: 1080px) {
+    .experience-card {
+        min-width: 380px;
+        max-width: 420px;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.experience-title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.experience-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+.experience-company {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    color: #82dae4;
+}
+
+.experience-period {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #d4d4d4;
+    white-space: nowrap;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.experience-description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    color: #e0e0e0;
+    font-style: italic;
+    border-left: 3px solid #82dae4;
+    padding-left: 12px;
+}
+
+.experience-responsibilities {
+    margin-bottom: 20px;
+}
+
+.experience-responsibilities h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #82dae4;
+}
+
+.experience-responsibilities ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-responsibilities li {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 8px 0 8px 24px;
+    position: relative;
+    color: #d4d4d4;
+}
+
+.experience-responsibilities li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #82dae4;
+    font-weight: bold;
+}
+
+.experience-tech {
+    margin-top: 20px;
+}
+
+.experience-tech h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #82dae4;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-tag {
+    display: inline-block;
+    padding: 8px 14px;
+    background: linear-gradient(135deg, rgba(130, 218, 228, 0.2) 0%, rgba(73, 97, 99, 0.4) 100%);
+    border: 1px solid #82dae4;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: linear-gradient(135deg, rgba(130, 218, 228, 0.4) 0%, rgba(73, 97, 99, 0.6) 100%);
+    box-shadow: 0 0 10px rgba(130, 218, 228, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .experience-container {
+        padding: 1.3rem;
+    }
+
+    .experience-content {
+        flex-direction: column;
+        overflow-x: visible;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .experience-card {
+        padding: 20px;
+        flex: 1 1 auto;
+        min-width: auto;
+        max-width: 100%;
+    }
+
+    .experience-header {
+        flex-direction: column;
+    }
+
+    .experience-period {
+        font-size: 1.3rem;
+    }
+
+    .experience-title {
+        font-size: 1.8rem;
+    }
+
+    .experience-company {
+        font-size: 1.5rem;
+    }
+
+    .experience-description {
+        font-size: 1.4rem;
+    }
+
+    .experience-responsibilities h4,
+    .experience-tech h4 {
+        font-size: 1.6rem;
+    }
+
+    .experience-responsibilities li {
+        font-size: 1.4rem;
+    }
+
+    .tech-tag {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .experience-container {
+        padding: 1rem;
+    }
+    
+    .experience-content {
+        padding: 0 10px;
+        gap: 15px;
+    }
+
+    .experience-card {
+        padding: 16px;
+    }
+
+    .experience-title {
+        font-size: 1.6rem;
+    }
+
+    .experience-company {
+        font-size: 1.3rem;
+    }
+
+    .experience-period {
+        font-size: 1.2rem;
+        padding: 6px 10px;
+    }
+
+    .experience-description {
+        font-size: 1.3rem;
+        padding-left: 10px;
+    }
+
+    .experience-responsibilities h4,
+    .experience-tech h4 {
+        font-size: 1.4rem;
+    }
+
+    .experience-responsibilities li {
+        font-size: 1.3rem;
+        padding: 6px 0 6px 20px;
+    }
+
+    .tech-tags {
+        gap: 8px;
+    }
+
+    .tech-tag {
+        padding: 6px 10px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-card {
+        padding: 12px;
+        border-left: 3px solid #82dae4;
+    }
+
+    .experience-title {
+        font-size: 1.4rem;
+    }
+
+    .experience-company {
+        font-size: 1.2rem;
+    }
+
+    .experience-description {
+        font-size: 1.2rem;
+        padding-left: 8px;
+    }
+
+    .experience-responsibilities h4,
+    .experience-tech h4 {
+        font-size: 1.3rem;
+        margin: 0 0 8px 0;
+    }
+
+    .experience-responsibilities li {
+        font-size: 1.2rem;
+        padding: 4px 0 4px 18px;
+    }
+
+    .tech-tag {
+        padding: 5px 8px;
+        font-size: 1rem;
+    }
+}

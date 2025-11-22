@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Experience from "./components/Experience/Experience";
 import Cards from "./components/Card/Cards";
 import About from "./components/About/About";
 import Social from "./components/Social/Social";
@@ -12,6 +13,7 @@ function App() {
         <>
             <Header />
             <Hero />
+            <Experience />
             <Cards />
             <About />
             <Social />
