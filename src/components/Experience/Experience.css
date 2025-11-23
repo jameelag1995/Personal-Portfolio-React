@@ -41,9 +41,8 @@
     transition: all 0.3s ease-in-out;
     border-left: 5px solid #82dae4;
     animation: slideInLeft 0.6s ease-out;
-    flex: 0 0 auto;
-    min-width: 450px;
-    max-width: 500px;
+    flex: 1 1 auto;
+    min-width: 0;
     height: auto;
 }
 
@@ -52,19 +51,63 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Tablet: Show 1.5-2 cards */
-@media (max-width: 1200px) {
+/* Ensure minimum card width for readability on desktop */
+@media (min-width: 1201px) {
     .experience-card {
-        min-width: 400px;
-        max-width: 450px;
+        min-width: 350px;
+        max-width: none;
     }
 }
 
-/* Small desktop: Show 2 cards */
-@media (max-width: 1080px) {
+/* Tablet: Maintain fixed width cards for horizontal scroll */
+@media (max-width: 1200px) and (min-width: 769px) {
     .experience-card {
-        min-width: 380px;
-        max-width: 420px;
+        flex: 0 0 auto;
+        min-width: 400px;
+        max-width: 400px;
+    }
+}
+
+/* Mobile: Stack vertically */
+@media (max-width: 768px) {
+    .experience-content {
+        flex-direction: column;
+        overflow-x: visible;
+        gap: 16px;
+    }
+
+    .experience-card {
+        flex: 1 1 auto;
+        min-width: 100%;
+        max-width: none;
+    }
+
+    .experience-title {
+        font-size: 1.8rem;
+    }
+
+    .experience-company {
+        font-size: 1.4rem;
+    }
+
+    .experience-period {
+        font-size: 1.2rem;
+    }
+
+    .experience-description {
+        font-size: 1.4rem;
+    }
+
+    .experience-responsibilities h4 {
+        font-size: 1.6rem;
+    }
+
+    .experience-responsibilities li {
+        font-size: 1.4rem;
+    }
+
+    .tech-stack-item {
+        font-size: 1rem;
     }
 }
 
