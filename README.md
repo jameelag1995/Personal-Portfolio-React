@@ -252,7 +252,7 @@ This portfolio is open source and available for personal and educational use.
 ## 🤝 Connect With Me
 
 - **GitHub**: [jameelag1995](https://github.com/jameelag1995)
-- **LinkedIn**: [Jameel AG](https://linkedin.com/in/jameel-ag)
+- **LinkedIn**: [Jameel Agbaria](www.linkedin.com/in/jameel-agbaria-0a8593159)
 - **Portfolio**: [jeemlabs.netlify.app](https://jeemlabs.netlify.app/)
 
 ---
